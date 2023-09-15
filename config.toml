@@ -4,7 +4,7 @@ defaultContentLanguage = 'en'
 
 
 [params]
-  title = 'Remix, a theme for Hugo fully editable with Netlify CMS'
+  title = 'Cloverleaf Yarn'
   metaDescription = "Hugo + Netlify CMS + One click deploy to Netlify"
 
 
@@ -15,14 +15,6 @@ languageCode = "en-us"
 contentDir = "content/english"
 weight = 1
 mark = "EN"
-
-[Languages.fr]
-languageName = "fr"
-languageCode = "fr-fr"
-contentDir = "content/fr"
-weight = 2
-mark = "FR"
-
 
 [taxonomies]
   category= "theme"
