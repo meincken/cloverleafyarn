@@ -12,13 +12,6 @@ locale: 'en'
 # You need to run at the root of the project `npx netlify-cms-proxy-server`
 local_backend: true
 
-# i18n https://www.netlifycms.org/docs/beta-features/#i18n-support
-i18n:
-  structure: multiple_folders
-  locales: en
-  default_locale: en
-
-
 # collections configuration
 collections:
   - name: "sections"
