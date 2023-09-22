@@ -1,0 +1,21 @@
+.menu {
+  display: none;
+}
+
+.header-bar {
+  align-items: center;
+  display: flex;
+  height: 6rem;
+  justify-content: space-between;
+  margin: auto;
+  width: 70rem;
+}
+
+.nav a {
+  text-decoration: none;
+}
+
+.logo a {
+  font-size: 3rem;
+  text-transform: uppercase;
+}

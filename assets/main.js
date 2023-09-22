@@ -59,9 +59,6 @@ function initData() {
 function initNav() {
   const headerEle = document.querySelector(".header-bar");
   const navItems = document.querySelectorAll(".nav .item");
-  const themeEle = document.querySelector(".header-bar .theme");
-  const langEle = document.querySelector(".header-bar .lang");
-  const listItems = document.querySelectorAll(".nav .item ul li");
   const menuEle = document.querySelector(".header-bar .menu");
 
   // 菜单点击
@@ -100,29 +97,29 @@ function initNav() {
   }
 
   // 主题切换点击
-  if (themeEle) {
-    themeEle.onclick = function () {
-      const html = document.querySelector("html");
-      const htmlThemeClass = html.getAttribute("class");
-      const val = htmlThemeClass === "light-mode" ? "" : "light-mode";
-      html.setAttribute("class", val);
-      localStorage.setItem("theme", val);
-    };
-  }
+  // if (themeEle) {
+  //   themeEle.onclick = function () {
+  //     const html = document.querySelector("html");
+  //     const htmlThemeClass = html.getAttribute("class");
+  //     const val = htmlThemeClass === "light-mode" ? "" : "light-mode";
+  //     html.setAttribute("class", val);
+  //     localStorage.setItem("theme", val);
+  //   };
+  // }
 
   // 语言切换点击
-  if (langEle) {
-    langEle.onclick = function () {
-      switch (langEle.innerText) {
-        case "en":
-          location.href = "/fr";
-          break;
-        case "fr":
-          location.href = "/";
-          break;
-      }
-    };
-  }
+  // if (langEle) {
+  //   langEle.onclick = function () {
+  //     switch (langEle.innerText) {
+  //       case "en":
+  //         location.href = "/fr";
+  //         break;
+  //       case "fr":
+  //         location.href = "/";
+  //         break;
+  //     }
+  //   };
+  // }
 
   // 子菜单点击
   // if (listItems) {

@@ -1,0 +1,14 @@
+.footer {
+  color: var(--color-black);
+  padding: 2rem;
+  text-align: center;
+
+  span,
+  a {
+    color: inherit;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}

@@ -5,12 +5,11 @@
 {{ $glossary := index site.Data.glossary site.Language.Lang }}
 
 <section class="section sec1" id="home">
-    <div class="left-header">
-        <div class="h-shape"></div>
+    <div class="home-header">
         <img src="{{$data.image}}" class="image">
-    </div>
-    <div class="right-header">
-        <h1 class="name">{{ $data.title | safeHTML }}</h1>
-        <p>{{ $data.shortDescription }}</p>
+        <div class="home-header--content">
+            <h1 class="name">{{ $data.title | safeHTML }}</h1>
+            <p>{{ $data.shortDescription }}</p>
+        </div>
     </div>
 </section>

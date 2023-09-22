@@ -1,0 +1,21 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: [full-start] minmax(1rem, 1fr) [main-start] minmax(0px, 70rem) [main-end] minmax(1rem, 1fr) [full-end];
+
+  > * {
+    grid-column: main;
+  }
+}
+
+img {
+  width: 100%;
+}

@@ -1,11 +1,8 @@
 en:
   title: Cloverleaf Yarn
-  slogan: Nulla magna eiusmod ea eu irure exercitation non incididunt.
-  shortDescription: |
-    → Get your own copy of this website in minutes.
-    → Edit everything with no single line of code.
-    → It's free and open-source!
-  image: /media/wave.jpg
-  copyright: "  © 2017-2022 - Nick Meincken"
-  register: Roneo.org
-  registerUrl: https://roneo.org/en
+  slogan: A good yarn to tell
+  shortDescription: 
+  image: /media/thegirls.jpg
+  copyright: "  © 2023 - Nick Meincken for "
+  register: CloverleafYarn
+  registerUrl: https://cloverleafyarn.co.uk
