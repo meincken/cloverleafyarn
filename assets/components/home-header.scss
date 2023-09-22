@@ -3,18 +3,25 @@
 
 
   &--content {
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    justify-content: center;
     position: absolute;
     top: 0;
-    height: 100%;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
     h1 {
-      text-transform: uppercase;
-      font-weight: 600;
       color: white;
+      font-weight: 600;
+      margin: 0;
+      text-shadow: 0 0 15px rgb(0,0,0);
+      text-transform: uppercase;
+    }
+
+    p {
+      color: var(--color-white);
       text-shadow: 0 0 15px rgb(0,0,0);
     }
   }

@@ -15,19 +15,17 @@
 
 <body>
 <!-- navigation header -->
-<div class="white-header">
-    {{ partial "header.html" .}}
-</div>
+{{ partial "header.html" .}}
 
 
-<div class="article-container">
+<main class="article-container">
     <h1 class="title">
         {{.Title}}
     </h1>
     <div class="md-content">
         {{ .Content }}
     </div>
-</div>
+</main>
 
 <!-- footer copyright -->
 {{ partial "footer.html" .}}

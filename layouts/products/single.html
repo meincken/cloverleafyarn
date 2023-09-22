@@ -16,14 +16,11 @@
 {{ $glossary := index site.Data.glossary site.Language.Lang }}
 
 <!--data-->
-
-
 <!DOCTYPE html>
 <html lang="en">
 
 <!-- head link and script -->
 {{ partial "head.html" .}}
-
 
 <!-- Generate CSS -->
 {{ $options := (dict "enableSourceMap" true ) }}
@@ -38,12 +35,9 @@
 
 <body>
     <!-- navigation header -->
-    <div class="white-header">
-        {{ partial "header.html" .}}
-    </div>
+    {{ partial "header.html" .}}
 
-
-    <div class="product-page">
+    <main class="product-page">
         <div class="banner">
             <img src="{{ $curCategoryCfg.coverImage }}">
             <h1> {{  $curCategoryCfg.name }} </h1>
@@ -75,7 +69,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </main>
 
     <!-- footer copyright -->
     {{ partial "footer.html" .}}

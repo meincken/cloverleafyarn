@@ -60,7 +60,6 @@ collections:
                 { label: "c2", value: "c2" },
                 { label: "c3", value: "c3" },
                 { label: "c4", value: "c4" },
-                { label: "c5", value: "c5" },
               ] },
               { label: "Description", name: "description", widget: text  },
             ] }

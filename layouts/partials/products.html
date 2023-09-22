@@ -9,9 +9,7 @@
 
 {{ $existtheme :=  site.Taxonomies.theme }}
 
-
 <section class="section sec3 content-sec" id="product">
-
     <div class="main-title">
         <h2>{{ $data.title | safeHTML }}</h2>
         <div class="border"></div>
@@ -21,9 +19,7 @@
         {{ $data.portText }}
     </p>
 
-
     <div class="categories">
-
         {{range $curCategorySlug, $curCategoryVar := $existtheme}}
         {{ $curCategoryCfg := index $cMapping $curCategorySlug}}
         {{ $firstPage := index $curCategoryVar 0}}
@@ -40,9 +36,5 @@
             </div>
         </div>
         {{ end }}
-
-
     </div>
-
-
 </section>
