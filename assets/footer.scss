@@ -1,0 +1,15 @@
+// footer
+.footer {
+  color: var(--color-white);
+  padding: 2rem;
+  text-align: center;
+
+  span,
+  a {
+    color: inherit;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}

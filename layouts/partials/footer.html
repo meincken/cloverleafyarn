@@ -1,14 +1,14 @@
 {{ $data := index site.Data.home  site.Language.Lang }}
 
 
-<div class="footer">
-    <span>
-       {{ $data.copyright}}
-    </span>
-    <a href="{{ $data.registerUrl}}">
-        {{ $data.register}}
-    </a>
-</div>
+<footer class="footer">
+    <small>
+      {{ $data.copyright}}
+      <a href="{{ $data.registerUrl}}">
+          {{ $data.register}}
+      </a>
+    </small>
+</footer>
 
 
 <script>
@@ -18,10 +18,3 @@
     window.location.assign('/admin/' + window.location.hash);
   }
   </script>
-
-<!-- Set Netlify CMS language -->
-<script type="text/javascript">
-    window.onload = function() {
-      netlifyIdentity.setLocale('fr')
-    }
-</script>
