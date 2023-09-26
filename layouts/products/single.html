@@ -15,6 +15,7 @@
 
 {{ $glossary := index site.Data.glossary site.Language.Lang }}
 
+
 <!--data-->
 <!DOCTYPE html>
 <html lang="en">
@@ -38,14 +39,14 @@
     {{ partial "header.html" .}}
 
     <main class="product-page">
-        <div class="banner">
+        <!--/* <div class="banner">
             <img src="{{ $curCategoryCfg.coverImage }}">
             <h1> {{  $curCategoryCfg.name }} </h1>
-        </div>
+        </div> */-->
 
         <div class="container">
-            <div class="side-menu">
-                <!-- <div class="title">
+            <!-- <div class="side-menu">
+                <div class="title">
                     {{printf "%s %s" $curCategoryCfg.name $glossary.list}}
                 </div>
 
@@ -57,8 +58,8 @@
                         </div>
                     </li>
                     {{end}}
-                </ul> -->
-            </div>
+                </ul>
+            </div> -->
 
             <div class="main">
                 <div class="title">
