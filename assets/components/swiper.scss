@@ -1,0 +1,40 @@
+:root {
+  --swiper-theme-color: green;
+}
+.swiper {
+  width: 100%;
+
+  &-slide {
+    > div {
+      display: grid;
+      // gap: 10px;
+      grid-template-columns: 50% 1fr;
+      padding: 0 5rem 4rem;
+    }
+
+    img {
+      border-radius: 1rem 0 0 1rem;
+    }
+
+    .content {
+      align-items: center;
+      background-color: green;
+      border-radius: 0 1rem 1rem 0;
+      color: white;
+      display: flex;
+      flex-flow: column;
+      padding: 2rem;
+    }
+
+    &:nth-of-type(even) {
+      img {
+        border-radius: 0 1rem 1rem 0;
+      }
+
+      .content {
+        border-radius: 1rem 0 0 1rem;
+        order: -1;
+      } 
+    }
+  }
+}

@@ -1,54 +1,60 @@
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-/>
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
 <h2>The Process</h2>
-<div class="swiper">
+<div class="swiper process-swiper">
   <div class="swiper-wrapper">
     <div class="swiper-slide">
-      <img src="/media/01-lambs.jpg" />
-      <div class="content">
-        <h3>Fleece</h3>
-        <p>It takes a year for the fleece to grow.</p>
+      <div>
+        <img src="/media/01-lambs.jpg" />
+        <div class="content">
+          <h3>Fleece</h3>
+          <p>It takes a year for the fleece to grow.</p>
+        </div>
       </div>
     </div>
     <div class="swiper-slide">
-      <img src="/media/02-shearing.jpg" />
-      <div class="content">
-        <h3>Sheering</h3>
-        <p>Professional shearer's take about 3 minutes to shear each sheep, Thank you Neil</p>
+      <div>
+        <img src="/media/02-shearing.jpg" />
+        <div class="content">
+          <h3>Sheering</h3>
+          <p>Professional shearer's take about 3 minutes to shear each sheep. <br />Thank you Neil</p>
+        </div>
       </div>
     </div>
     <div class="swiper-slide">
-      <img src="/media/03-skirting.jpg" />
-      <div class="content">
-        <h3>Skirting</h3>
-        <p>Skirting and sorting for quality takes about an hour for each fleece </p>
+      <div>
+        <img src="/media/03-skirting.jpg" />
+        <div class="content">
+          <h3>Skirting</h3>
+          <p>Skirting and sorting for quality takes about an hour per fleece </p>
+        </div>
       </div>
     </div>
     <div class="swiper-slide">
-      <img src="/media/04-washing.jpg" />
-      <!--/* <img src="/media/05-drying.jpg" /> */-->
-      <div class="content">
-        <h3>Washing & Drying</h3>
-        <p>Washing and drying can only be done on sunny days it takes 2-3 days</p>
+      <div>
+        <img src="/media/05-drying.jpg" />
+        <div class="content">
+          <h3>Washing & Drying</h3>
+          <p>Washing and drying can only be completed on sunny days and can take 2-3 days</p>
+          <img src="/media/04-washing.jpg" />
+
+        </div>
       </div>
     </div>
     <div class="swiper-slide">
-      <img src="/media/06-spinning.jpg" />
-      <div class="content">
-        <h3>Spinning</h3>
-        <p>It takes about a day to spin one bobbin, this is a single, when you have 3 bobbins they are "plyed" together to balance the yarn. The yarn is then washed and "thwacked" to set the spin.</p>
+      <div>
+        <img src="/media/06-spinning.jpg" />
+        <div class="content">
+          <h3>Spinning</h3>
+          <p>It takes about a day to spin one bobbin, this is a single, when you have 3 bobbins they are "plyed" together to balance the yarn. The yarn is then washed and "thwacked" to set the spin.</p>
+        </div>
       </div>
     </div>
     <div class="swiper-slide">
-      <img src="/media/07-colouring.jpg" />
-      <div class="content">
-        <h3>Colouring</h3>
-        <p>The yarn can now be dyed this will take up to 3 days</p>
+      <div>
+        <img src="/media/07-colouring.jpg" />
+        <div class="content">
+          <h3>Colouring</h3>
+          <p>The yarn can now be dyed this will take up to 3 days</p>
+        </div>
       </div>
     </div>
   </div>
@@ -57,36 +63,3 @@
   <div class="swiper-button-prev"></div>
   <div class="swiper-button-next"></div>
 </div>
-
-<script>
-const swiper = new Swiper('.swiper', {
-  direction: 'horizontal',
-  loop: true,
-
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
-</script>
-<style>
-.swiper {
-  width: 100%;
-}
-
-.swiper-slide {
-  display: grid;
-  gap: 10px;
-  grid-template-columns: 50% 1fr;
-}
-
-.swiper-slide .content {
-  align-items: center;
-  display: flex;
-  flex-flow: column;
-}
-</style>

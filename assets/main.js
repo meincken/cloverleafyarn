@@ -41,6 +41,7 @@ function init() {
   initData();
   initNav();
   initScroll();
+  initSwiper();
 }
 
 // 数据初始化
@@ -176,4 +177,20 @@ function initScroll() {
       changeHash(id);
     }
   };
+}
+
+function initSwiper() {
+  const swiper = new Swiper('.process-swiper', {
+    direction: 'horizontal',
+    loop: false,
+  
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
 }
